@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+
+<body>
+    <h2>HTML Input Forms</h2>
+    <!-- This is how you make a form -->
+    <form action="backend.php">
+        <!-- the data submitted in form will be sent to backend.php -->
+        <!-- Write "input:" this will give you types of input -->
+        <!-- Label is used to improve interation-if one click name anywhere then input in box will operate (Id and for should be same )-->
+        <label for="name"> Name: </label>
+        <input type="text" name="myname" id="name">
+        <!-- Name="xyz" is the shortcut to get that data submitted by any user from my backend -->
+        <div><br>Task: <input type="text" name="mytask"></div>
+        <div><br>Email: <input type="email" name="myemail"></div>
+        <div><br> Contact Number <input type="tel" name="mycontact" placeholder="1111-1111111"
+                pattern="[0-9]{4}-[0-9]{7}" required>
+            <div><br>Date and Time: <input type="datetime-local" name="mydatetime"></div>
+            <div><br>Hours of Work: <input type="number" name="Work Hours"> </div>
+            <div><br><label for="eligible"> Eligibility </label>
+                <input type="checkbox" name="myeligibility" checked id="eligible">
+            </div>
+            <div><br> Gender: Male <input type="radio" name="mygender">
+                Female <input type="radio" name="mygender"></div>
+            <!-- Due to similar name="mygender" only one out of male/female/other can be checked -->
+            <div><br> Brief Intro <br> <textarea name="" id="" cols="60" rows="5"></textarea></div>
+            <div><br><label for="urgency">Urgency </label>
+            <select name="urgency" id="urgency">
+                <option value="none"> normal </option>
+                <option value="24 hrs"> 24 Hours </option>
+                <option value="36 hrs" selected> 36 Hours</option>
+            </select></div><br>
+            <input type="submit" value="Submit Now"><input type="reset" value="Reset Now">
+
+    </form>
+</body>
+
+</html>
