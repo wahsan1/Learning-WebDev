@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudi selectors and Button styling</title>
+    <style>
+        * {
+            font-family: Calibri;
+            box-sizing: border-box;
+
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        body {
+            background-color: rgb(225, 206, 136);
+        }
+
+        .container {
+            border: 3px solid brown;
+            width: 600px;
+            background-color: beige;
+            padding: 10px;
+            margin: auto;
+        }
+
+        .btn {
+            background-color: brown;
+            color: aliceblue;
+            padding: 2px;
+            border: none;
+            font-family: Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bold;
+            font-size: 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            /* used to remove any default designing eg underline in a link */
+        }
+
+        /* Below are the pseudo Selectors */
+        .btn:hover {
+            background-color: red;
+        }
+
+        .btn:visited {
+            color: yellow;}
+
+           #link:active {
+                background-color: rgb(6, 0, 168);
+            }
+    </style>
+</head>
+
+<body>
+    <h2>Pseudo selectors and different designing of Links and Buttons</h2>
+    <div class="container" id="one">
+        <h4>This is a Heading</h4>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum blanditiis asperiores animi, voluptatem
+            itaque quos, repudiandae corrupti, quae qui eius distinctio. Expedita ab ducimus, officia sequi facere
+            ipsam. Omnis, a.</p>
+
+        <a href="https://www.yahoo.com" target="_blank" id="link" class="btn">Click Here</a>&nbsp;&nbsp;&nbsp;
+
+        <button class="btn" id="2">Contact Us</button>
+    </div>
+
+</body>
+
+</html>
