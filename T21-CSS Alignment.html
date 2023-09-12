@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <title>CSS-ALIGNMENT</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: antiquewhite;
+        }
+
+        h3,h2,h4,
+        p {
+            text-align: center;
+            font-family: calibri;
+        }
+
+
+        .container {
+            border: 5px solid orange;
+            width: 800px;
+            margin: auto;
+            font-family: 'Poppins';
+            /* adjust in centre in X plane */
+        }
+
+        .content {
+            border: 3px solid rgb(63, 204, 16);
+            margin: 10px;
+            padding: 12px 3px;
+            background-color: rgb(186, 233, 246);
+        }
+
+        #fruit {
+            float: left;
+            width: 47%;
+        }
+
+        #toy {
+            float: right;
+            width: 47%;
+        }
+
+        #car {
+            /* float: left;
+            width: 100%; */
+
+            clear: left;
+            /* whatever is floating on left should be clear and not overlap */
+
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Tutorial-Alignment in CSS </h2>
+    <div class="container">
+        <h3>Welcome to My Store</h3>
+        <div id="fruit" class="content">
+            <h4 id="fruithdg">Heading of Fruits</h4>
+            <p id="fruitpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nisi
+                doloribus quibusdam. Fugiat, dolorem nobis. Quae dolor distinctio neque eius ipsam! Asperiores magni
+                repellendus dolore repudiandae animi. Sit blanditiis aut deleniti et perspiciatis dolor provident,
+                labore fugiat mollitia? Beatae, alias?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi
+                ducimus sunt numquam assumenda
+                perspiciatis provident eligendi modi voluptatum incidunt ex, possimus, sint laboriosam non, neque rem
+                qui veritatis quis enim!</p>
+        </div>
+        <div id="toy" class="content">
+            <h4 id="toyhdg">Heading of Toy</h4>
+            <p id="toypara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos culpa
+                voluptas adipisci id porro laborum maiores autem amet, tenetur nobis consequatur illo, totam quod cumque
+                excepturi at. Incidunt quae iusto quam nostrum eum deserunt soluta consequuntur sunt quod fugiat.Lorem,
+                ipsum dolor sit amet consectetur adipisicing elit. Sequi ducimus sunt
+                numquam assumenda
+                perspiciatis provident eligendi modi voluptatum incidunt ex, possimus, sint laboriosam non, neque rem
+                qui veritatis quis enim!</p>
+        </div>
+        <div id="car" class="content">
+            <h4 id="classhdg">Heading of Car</h4>
+            <p id="carpara" class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi ducimus sunt
+                numquam assumenda
+                perspiciatis provident eligendi modi voluptatum incidunt ex, possimus, sint laboriosam non, neque rem
+                qui veritatis quis enim!</p>
+        </div>
+        <div id="glass" class="content">
+            <h4 id="glasshdg">Heading of Glass</h4>
+            <p id="glasspara" class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi ducimus sunt
+                numquam assumenda
+                perspiciatis provident eligendi modi voluptatum incidunt ex, possimus, sint laboriosam non, neque rem
+                qui veritatis quis enim!</p>
+        </div>
+
+    </div>
+</body>
+
+</html>
