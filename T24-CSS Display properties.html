@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-DISPLPAY PROPERTIES</title>
+    
+<style>
+*{
+    box-sizing: border-box;
+    margin: 0%;padding: 0%;
+    font-family: calibri; 
+}
+h1,h2{
+    text-align: center;
+}
+header{
+    /* border: 4px solid grey; */
+    margin: auto; 
+     width: 1200px; 
+     /*Even If i remove margin and Width of Header the content will remain in centre becoz of display in img and text align in h2 */
+}
+img{
+    /* height: 100px; */
+    /* If only Width or height is adjusted, aspect ratio will not be disturbed */
+    width: 100px;
+    display: block;
+    margin: auto;
+}
+.container{
+    /* border: 2px solid black; */
+    margin: auto;
+    width: 1200px;
+    margin-top: 20px;
+}
+.box{
+    border: 2px solid brown;
+    background-color: beige;
+    margin: 5px;padding: 10px; 
+    width: 32%;
+
+    display: inline-block;
+    /* Allows to set a width and height on the element */
+}
+
+</style>    
+    
+</head>
+<body>
+<h1>CSS Display Properties-Tutorial</h2>
+<header class="top">
+    <img src="resources/8_720x.webp" alt="">
+<h2>Welcome To my Tutorial Blog of Display</h4>
+</header>
+    <div class="container">
+        <div class="box">
+            <h3>Heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid deleniti, unde tempore modi ipsam praesentium id maiores, quisquam, corporis voluptatum fugit! Molestiae, molestias dicta error optio ex id, alias praesentium cumque officia accusamus vitae deserunt reprehenderit atque velit, ab iste?</p>
+    </div>
+        <div class="box">
+            <h3>Heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid deleniti, unde tempore modi ipsam praesentium id maiores, quisquam, corporis voluptatum fugit! Molestiae, molestias dicta error optio ex id, alias praesentium cumque officia accusamus vitae deserunt reprehenderit atque velit, ab iste?</p>
+    </div>
+        <div class="box">
+            <h3>Heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid deleniti, unde tempore modi ipsam praesentium id maiores, quisquam, corporis voluptatum fugit! Molestiae, molestias dicta error optio ex id, alias praesentium cumque officia accusamus vitae deserunt reprehenderit atque velit, ab iste?</p>
+    </div>
+    </div>
+</body>
+</html>
