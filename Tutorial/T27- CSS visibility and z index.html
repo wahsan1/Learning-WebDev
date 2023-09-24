@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            height: 125px;
+            width: 125px;
+            border: 2px solid black;
+        }
+
+        #box1 {
+            background-color: aqua;
+            position: relative;
+            top: 50px;
+
+            z-index: 11;
+            /* Here Box 1 will be on top of box 2 as its Z index value is higher */
+        }
+
+        #box2 {
+            /* display: none; */
+            /* visibility: hidden; */
+            position: relative;
+            top: 20px;
+            z-index: 10;
+            background-color: green;
+        }
+
+        #box3 {
+            background-color: red;
+        }
+
+        #box4 {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- div.box#box$*4 -->
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+
+</body>
+
+</html>
