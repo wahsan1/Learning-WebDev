@@ -1,76 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS-BOX MODEL MARGIN AND PADDING</title>
     <style>
-        * {
-            box-sizing: border-box;
-            /* include the padding and border in an element's total width and height. */
-            margin: 0;
-            padding: 0;
-        }
-h2{
-    margin-left: 60px; margin-top: 40px;
-}
-        body {
-            background-color: rgb(199 199 226);
-        }
+      * {
+        box-sizing: border-box;
+        /* Total Width/Height= Content+padding+border (Margin is always seperate space), wise Otherwise
+         Width = content width (padding + border is addl)*/
+        margin: 0;
+        padding: 0;
+      }
+      h2 {
+        margin-left: 60px;
+        margin-top: 40px;
+      }
+      body {
+        background-color: rgb(199 199 226);
+      }
 
-        .boxmodel {
-            background-color: beige;
-            width: 900px;
-            border: 3px solid yellowgreen;
-            border-radius: 100px;
-            
-            margin: 30px;
-            padding: 30px;
-            
-            /* We can set margin/padding for  top, bottom, left and right like this */
-            /* padding-top: 79px;
+      .boxmodel {
+        background-color: beige;
+        width: 900px;
+        border: 3px solid yellowgreen;
+        border-radius: 100px;
+
+        margin: 30px;
+        padding: 30px;
+
+        /* We can set margin/padding for  top, bottom, left and right like this */
+        /* padding-top: 79px;
             padding-bottom: 79px;
             padding-left: 34px; 
             padding-right: 79px;*/
 
-            /* margin-top: 3px;
+        /* margin-top: 3px;
             margin-bottom: 5px;
             margin-left: 34px;
             margin-right:5px ; */
 
-            /* margin = top right bottom left;  */
-            /* padding = top right bottom left;  */
+        /* margin = top right bottom left;  */
+        /* padding = top right bottom left;  */
 
-            /* padding: 23px 56px 6px 78px;   */
-            /* margin: 23px 56px 6px 78px;   */
+        /* padding: 23px 56px 6px 78px;   */
+        /* margin: 23px 56px 6px 78px;   */
 
-            /* padding: y(top/bottom) x(left/right); */
-            /* margin: y(top/bottom) x(left/right); */
-        }
+        /* padding: y(top/bottom) x(left/right); */
+        /* margin: y(top/bottom) x(left/right); */
+      }
+      .box1{
+        font-weight: bold;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <h2>Box Model, Margin and Padding in CSS</h2>
-    <div class="boxmodel">
-        <h4>heading with <em>boxmodel</em> class</h4>
-        <p>para with <em>boxmodel</em> class.... Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum
-            consequuntur placeat, vero eligendi accusamus, nostrum blanditiis neque minima veniam ullam cumque hic
-            doloremque rem, expedita ex et natus ipsa sequi.</p>
+    <div class="boxmodel box1">
+      <h4>heading with <em>boxmodel</em> class</h4>
+      <p>
+        para with <em>boxmodel</em> class.... Lorem ipsum dolor sit amet
+        consectetur, adipisicing elit. Dolorum consequuntur placeat, vero
+        eligendi accusamus, nostrum blanditiis neque minima veniam ullam cumque
+        hic doloremque rem, expedita ex et natus ipsa sequi.
+      </p>
     </div>
     <div class="boxmodel">
-        <h4>heading with <em>boxmodel</em> class</h4>
-        <p>para with <em>boxmodel</em> class.... Lorem psum dolor sit amet consectetur, adipiisicing elit. Dolorum
-            consequuntur placeat, vero eligendi accusamus, nostrum blanditiis neque minima veniam ullam cumque hic
-            doloremque rem, expedita ex et natus ipsa sequi.</p>
+      <h4>heading with <em>boxmodel</em> class</h4>
+      <p>
+        para with <em>boxmodel</em> class.... Lorem psum dolor sit amet
+        consectetur, adipiisicing elit. Dolorum consequuntur placeat, vero
+        eligendi accusamus, nostrum blanditiis neque minima veniam ullam cumque
+        hic doloremque rem, expedita ex et natus ipsa sequi.
+      </p>
     </div>
     <div class="boxmodel">
-        <h4>heading with <em>boxmodel</em> class</h4>
-        <p>para with <em>boxmodel</em> class.... Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum
-            consequuntur placeat, vero eligendi accusamus, nostrum blanditiis neque minima veniam ullam cumque hic
-            doloremque rem, expedita ex et natus ipsa sequi.</p>
+      <h4>heading with <em>boxmodel</em> class</h4>
+      <p>
+        para with <em>boxmodel</em> class.... Lorem ipsum dolor sit amet
+        consectetur, adipisicing elit. Dolorum consequuntur placeat, vero
+        eligendi accusamus, nostrum blanditiis neque minima veniam ullam cumque
+        hic doloremque rem, expedita ex et natus ipsa sequi.
+      </p>
     </div>
-</body>
-
+  </body>
 </html>

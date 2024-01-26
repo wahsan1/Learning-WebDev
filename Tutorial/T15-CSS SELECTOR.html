@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS SELECTORS</title>
     <style>
+
+        /* Universal Selector */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
         /* element selector */
         H2 {
             border: 2px solid red;
@@ -35,6 +42,35 @@
             background-color: greenyellow;
             font-weight: bolder;
         }
+
+        /* Child Selector */
+        div > p{
+            font-weight: bold;
+        }
+
+        /* descendant selector */
+        div article {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-style: italic;
+        }
+/* Pseudo Selectors */
+a:visited{
+    color: yellow;
+    
+}
+a:link{
+    color: red;
+}
+a:hover{
+    background-color: beige;
+}
+a:active{
+    background-color: green;
+}
+p:first-child{
+    background-color: blue;
+}
+
     </style>
 
 </head>
@@ -45,14 +81,18 @@
     <p class="class1">paragraph with class class1 </p>
     <p id="id1">another para with id id1</p>
     <div>
-        <p>this is a para in div</p>
+        <p>  this is a para in div</p>
         <p>this is another para in div</p>
+        <p><article>
+        This is an article under Para under Div
+         </article></p>
     </div>
     <div>
         <span>this is a span</span>
         <footer>this is footer</footer>
     </div>
-
+<a href="https://fast.com/" target="_blank">Internet Speed</a>
+<a href="https://www.twitter.com/" target="_blank">Google</a>
 
 </body>
 
