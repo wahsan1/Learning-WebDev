@@ -1,79 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>COLOR BACKGROUND AND BORDER IN CSS</title>
     <style>
-        #firstpara {
-            color: red;
-            /*color by name*/
-        }
+      #firstpara {
+        color: red;
+        /*color by name*/
+      }
 
-        #secondpara {
-            color: rgb(31, 84, 245)
-                /* color by rgb value */
-        }
+      #secondpara {
+        color: rgb(31, 84, 245);
+        /* color by rgb value */
+        /* OR */
+        /* color: rgba(255, 22, 5, 0.175) */
+        /* color: hsl(130, 61%, 44%); */
+      }
 
-        #thirdpara {
-            color: #60dca4;
-            /* color by HEX value */
-        }
+      #thirdpara {
+        color: #60dca4;
+        /* color by HEX value */
+      }
 
-        #fourthpara {
-            background-color: brown;
-            height: 60px;
-            width: 300px;
-            border: 3px solid rgb(0, 184, 28);
-            /* border-color: rgb(0, 184, 28);
+      #fourthpara {
+        background-color: brown;
+        height: 60px;
+        width: 300px;
+        border: 3px solid rgb(0, 184, 28);
+        /* border-color: rgb(0, 184, 28);
             border-style: solid;
             border-width: 3px; */
-            border-radius: 10px;
-            
-        }
+        border-radius: 10px;
+      }
 
-        #fifthpara {
-            background-color: yellow;
-            height: 60px;
-            width: 300px;
-            border-top: 10px solid rgb(28, 2, 122);
-            border-bottom: 10px solid rgb(4, 93, 17);
-            border-left: 10px solid rgb(184, 61, 0);
-            border-right: 10px solid rgb(152, 112, 112);
-            border-bottom-right-radius: 10px;
-            border-top-left-radius: 5px;
-            box-sizing: border-box;
-        }
+      #fifthpara {
+        background-color: yellow;
+        height: 60px;
+        width: 300px;
+        border-top: 10px solid rgb(28, 2, 122);
+        border-bottom: 10px solid rgb(4, 93, 17);
+        border-left: 10px solid rgb(184, 61, 0);
+        border-right: 10px solid rgb(152, 112, 112);
+        border-bottom-right-radius: 10px;
+        border-top-left-radius: 5px;
+        box-sizing: border-box;
+      }
 
-        #sixthpara {
-            color: rgb(0, 111, 207);
-            border: 5px solid rgb(75, 75, 0);
-            height: 300px;
-            width: 300px;
-            background-image: url(resources/8_720x.webp);
-            /* background-image: url(https://hindistatusnow.com/wp-content/uploads/2023/01/Smile-Whatsapp-DP-Images-9.jpg); */
-            background-repeat: no-repeat;
-            /* repeat x and y to repeat in x and y axis respectively*/
-            background-size: 200px;
-            /* background-position: center OR top left OR top Left OR Bottom left OR Boto, Right etc */
-            background-position: bottom right;
-            /* background-position: 50px 100px; (width is 50px and height is 100px) */
-        }
+      #sixthpara {
+        color: rgb(0, 111, 207);
+        border: 5px solid rgb(75, 75, 0);
+        height: 300px;
+        width: 300px;
+        background-image: url(resources/8_720x.webp);
+        /* background-image: url(https://hindistatusnow.com/wp-content/uploads/2023/01/Smile-Whatsapp-DP-Images-9.jpg); */
+        background-repeat: no-repeat;
+        /* repeat x and y to repeat in x and y axis respectively*/
+        background-size: 200px;
+        /* background-position: center OR top left OR top Left OR Bottom left OR Boto, Right etc */
+        background-position: bottom right;
+        /* background-position: 50px 100px; (width is 50px and height is 100px) */
+      }
     </style>
+  </head>
 
-</head>
-
-<body>
+  <body>
     <h2>Colors in CSS</h2>
-    <p id="firstpara"> This is first para wth id <strong>firstpara</strong></p>
-    <p id="secondpara"> This is first para wth id <strong>secondpara</strong></p>
-    <p id="thirdpara"> This is first para wth id <strong>thirdpara</strong></p>
+    <p id="firstpara">This is first para wth id <strong>firstpara</strong></p>
+    <p id="secondpara">This is first para wth id <strong>secondpara</strong></p>
+    <p id="thirdpara">This is first para wth id <strong>thirdpara</strong></p>
 
     <h2>Borders and Background in CSS</h2>
-    <p id="fourthpara">This is first para wth id <strong>fourthpara</strong> </p>
-    <p id="fifthpara">This is first para wth id <strong>fifthpara</strong> </p>
-    <p id="sixthpara">This is first para wth id <strong>sixthpara</strong> </p>
-</body>
-
+    <p id="fourthpara">This is first para wth id <strong>fourthpara</strong></p>
+    <p id="fifthpara">This is first para wth id <strong>fifthpara</strong></p>
+    <p id="sixthpara">This is first para wth id <strong>sixthpara</strong></p>
+  </body>
 </html>

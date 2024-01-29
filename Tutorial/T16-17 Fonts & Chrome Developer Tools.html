@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chrome Developer Tools/Fonts</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Acme&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Link to Font are addded in Head -->
+
+    <style>
+      /* @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Honk&display=swap'); */
+
+      h2 {
+        color: darkred;
+        border: 2px solid black;
+        font-family: "Acme", sans-serif;
+        /* line-height: 5px; */
+        letter-spacing: 5px;
+      }
+
+      .developer {
+        color: rgb(92, 2, 2);
+      }
+      .lorem {
+        border: 2px solid red;
+        width: 50px;
+        overflow: clip;
+        word-break: keep-all;
+      }
+      .fonts {
+        color: rgb(0, 11, 128);
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif, sans-serif;
+        font-weight: bolder;
+        text-decoration: underline;
+        text-decoration-style: dashed;
+        text-decoration-color: black;
+        font-style: italic;
+        text-transform: lowercase;
+        text-indent: 10px;
+      }
+
+      .font2 {
+        font-size: 25px;
+        /* Px=1/96 of inch */
+        font-family: "Bebas Neue";
+        line-height: 2em;
+        /* em is mulyiple of font size  */
+      }
+      span {
+        font-weight: bolder;
+        font-style: italic;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <h2>Chrome Developer Tools Tutorial</h2>
+      <p class="developer">
+        This is a para used in Chrome developer tools tutorial
+      </p>
+    </div>
+
+    <!-- https://fonts.google.com/ -->
+    <div>
+      <h2>CSS Fonts</h2>
+      <p class="fonts">This is a Para to test fonts</p>
+      <p class="font2">This is another para of <span> class font2</span></p>
+      <p class="lorem">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quisquam
+        eveniet alias. Commodi illo iusto non ad magni esse magnam.
+      </p>
+    </div>
+  </body>
+</html>
