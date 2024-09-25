@@ -1,53 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Text Sizing</title>
 
     <style>
-        html{
-            font-size: 10px;
-        }
-        h2{
-            text-align: center;
-        }
-        
-    .container{
+    
+      html {
         font-size: 10px;
+      }
+      h2 {
+        text-align: center;
+      }
+
+      .container {
+        font-size: 20px;
         border: 2px solid red;
         /* width: 400px; */
         /* height: 300px; */
-    
+
         width: 100vw;
         height: 100vh;
+        box-sizing: border-box;
         /* 100vw=cover complete width of view page /100vh=cover complete height of view page
          (100% instead of 100vw would also work in width but not in height)*/
-    }
-    #id1{
+      }
+      #id1 {
         /* font-size: 2em; */
         /* padding: 3em; */
         /* id1 will take container fontsize as ref and will become 20px (10x2) and padding ref will be taken from own element and become 60px(20 x 3) */
 
         font-size: 10px;
-
-    }
-    #id2{
+      }
+      #id2 {
         /* font-size: 2rem; */
         /* padding: 3rem; */
         /* id2 will take root elem (Html) as ref for both font size and padding and will become 20px and 30px */
 
         font-size: 10px;
-
-    }
+      }
     </style>
-</head>
-<div class="container">
+  </head>
+  <div class="container">
     <h2 id="id1">This is para with id-1</h2>
     <h2 id="id2">This is para with id-2</h2>
     <h2 id="id3">This is para with id-3</h2>
-</div>
-<body>
-    
-</body>
+  </div>
+  <body></body>
 </html>
